@@ -10,6 +10,8 @@ const data = [
   { id: 3, title: "Mac book", img: macs, price: 90000 },
   { id: 4, title: "Apple Air Pro", img: airpod, price: 129000 },
   { id: 5, title: "Ipad 14 Pro", img: pad, price: 80000 },
+  // { id: 5, title: "Ipad 14 Pro", img: pad, price: 80000 },
+
 ];
 
 export default data;

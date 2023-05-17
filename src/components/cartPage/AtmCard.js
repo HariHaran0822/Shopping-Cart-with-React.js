@@ -6,7 +6,6 @@ import cards from "../Images/cards5.jpeg";
 import tick from "../Images/tick.avif";
 import { useNavigate } from "react-router-dom";
 
-
 const customModalStyles = {
   content: {
     top: "50%",
@@ -58,31 +57,28 @@ export const DebitForm = (props) => {
   };
   const navigate = useNavigate();
 
-
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (cardDetail.length < 16 ||cvc.length === 0) {
+    if (cardDetail.length < 16 || cvc.length === 0) {
       setCardError(true);
-      setCvcError(true)
+      setCvcError(true);
       setShowModal(false);
-    } 
-
-     else{
+    } else {
       setCardError(false);
-      setCvcError(false)
+      setCvcError(false);
 
       const generatedOrderNumber = generateOrderNumber();
       setOrderNumber(generatedOrderNumber);
       setShowModal(true);
-    
-    setTimeout(() => {
-      setShowModal(false);
-      props.setCart(['']);
-      window.location.reload(); 
 
-      navigate("/");  
-      },2000);}
-  
+      setTimeout(() => {
+        setShowModal(false);
+        props.setCart([""]);
+        window.location.reload();
+
+        navigate("/");
+      }, 2000);
+    }
   };
 
   function CardChangeHandler(e) {
@@ -100,9 +96,11 @@ export const DebitForm = (props) => {
         <div className="label">
           <label>Card number</label>
           <input
+            // pattern="[0-9]{16}"
+
             maxLength={16}
             placeholder="1234 1234 1234 1234"
-            type="number"
+            type="text"
             onChange={CardChangeHandler}
           />
           {cardError && (
@@ -119,8 +117,16 @@ export const DebitForm = (props) => {
         </div>
         <div className="label">
           <label>CVC</label>
-          <input type="number" placeholder="CVC" onChange={cvcChangerHandler} maxLength={3}/>
-          {cvcError && <span style={{ color: "red" }}>Enter valid CVC digits</span>}
+          <input
+            type="text"
+            // pattern="[0-9]{16}"
+            placeholder="CVC"
+            onChange={cvcChangerHandler}
+            maxLength={3}
+          />
+          {cvcError && (
+            <span style={{ color: "red" }}>Enter valid CVC digits</span>
+          )}
         </div>
         <button className="pay-but-card" type="submit">
           <h3>Place Order {props.cartTotal}</h3>
@@ -170,9 +176,13 @@ function AtmCard(props) {
           handleShowForm={handleShowForm}
           cartTotal={props.cartTotal}
         />
-        {showForm && <DebitForm cart={props.cart} cartTotal={props.cartTotal} 
-        setCart={props.setCart}
-        />}
+        {showForm && (
+          <DebitForm
+            cart={props.cart}
+            cartTotal={props.cartTotal}
+            setCart={props.setCart}
+          />
+        )}
       </div>
       {showButton && <GooglePayBtn />}
     </div>
