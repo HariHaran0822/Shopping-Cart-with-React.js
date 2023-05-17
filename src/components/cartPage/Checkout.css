@@ -63,6 +63,15 @@ gap: 10px;
   padding: 20px;
   border-radius: 8px;
 }
+
+@media screen and (max-width:1400){
+.checkout-items-container-Main {
+  width:300px;
+    box-shadow: 2px 5px 10px rgb(62, 61, 61);
+
+    padding: 20px;
+    border-radius: 8px;
+  }}
 .checkout-head-item {
   display: flex;
   justify-content: space-between;
@@ -85,9 +94,13 @@ gap: 10px;
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1440px) {
   .checkout-page {
-    padding: 20px;
+    padding: 50px;
+
+  }
+  .detail{
+    width:400px;
   }
 }
 @media screen and (max-width: 1000px) {

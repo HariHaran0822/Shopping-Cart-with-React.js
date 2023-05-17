@@ -7,7 +7,6 @@ import { useEffect, useState } from "react";
 import Checkout from "./components/cartPage/Checkout";
 import Login from "./components/Pages/Login";
 import SuccessModal from "./components/Modals/SuccessModal/SuccessModal";
-// import Decimal from 'decimal.js';
 
 function App() {
   // const [showWebsite, setShowWebsite] = useState(false);

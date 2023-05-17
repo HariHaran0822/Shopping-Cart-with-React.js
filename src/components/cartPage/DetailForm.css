@@ -27,7 +27,7 @@
   width: 500px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1400px) {
   .form-detail {
     display: flex;
     flex-direction: column;
@@ -49,12 +49,12 @@
   }
   .names {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: start;
-    gap: auto;
+    /* gap: auto; */
   }
   .names input{
-width:50px;
+width:120px;
   }
   
   .main-d-form {

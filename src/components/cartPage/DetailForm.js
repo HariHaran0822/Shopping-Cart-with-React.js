@@ -103,13 +103,13 @@ console.log(e.target.value);
             <input
               onChange={fNameHandler}
               value={fname}
-              style={{ width: "300px" }}
+              // style={{ width: "300px" }}
               placeholder="First Name *"
             />
             <input
               onChange={lNameHandler}
               value={lname}
-              style={{ width: "300px" }}
+              // style={{ width: "300px" }}
               placeholder="Last Name *"
             />
           </div>

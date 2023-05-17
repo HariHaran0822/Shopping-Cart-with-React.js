@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import Modal from "react-modal";
 import "./AtmCard.css";
 import { FcGoogle } from "react-icons/fc";
-import cards from "/home/hariharan/Desktop/ShoppingCart-project/shopnow/src/components/Images/cards5.jpeg";
-import tick from "/home/hariharan/Desktop/ShoppingCart-project/shopnow/src/components/Images/tick.avif";
+import cards from "../Images/cards5.jpeg";
+import tick from "../Images/tick.avif";
 import { useNavigate } from "react-router-dom";
 
 

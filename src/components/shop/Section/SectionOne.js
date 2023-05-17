@@ -1,6 +1,7 @@
 import React from "react";
 import "./Section_1.css";
-import battery from "/home/hariharan/Desktop/ShoppingCart-project/shopnow/src/components/Images/battery.jpg";
+import battery from "../../Images/battery.jpg"
+// /src/components / Images / battery.jpg";
 function Section_1() {
   return (
     <div className="section">
