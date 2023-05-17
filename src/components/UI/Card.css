@@ -1,0 +1,37 @@
+.card {
+  width: 300px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  height: 400px;
+  overflow: hidden;
+  box-shadow: 5px 10px 18px rgb(105, 105, 105);
+  font-family: system-ui;
+}
+
+.img {
+  height: 250px;
+  /* width: 100%; */
+  align-self: center;
+  /* object-fit: contain; */
+}
+
+.btn {
+  background-color: #dc4c64;
+  box-shadow: 0 4px 9px -4px #dc4c64;
+  color: white;
+  width: 200px;
+  height: 50px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: "#dc4c64";
+}

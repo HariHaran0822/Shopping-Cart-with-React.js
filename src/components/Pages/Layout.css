@@ -1,0 +1,49 @@
+.layout {
+  list-style-type: none;
+  padding: 0px;
+  position: -webkit-sticky;
+  position: sticky;
+  margin: 0;
+}
+
+.layout-li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(5, 1, 7);
+  padding: 20px;
+  color: white;
+  /* position: -webkit-sticky;  */
+  position: sticky;
+  top: 0;
+}
+a:link {
+  text-decoration: none;
+
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+a:active {
+  color: none;
+}
+
+.cart-count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* color: black; */
+  /* background-color: white; */
+  width: 80px;
+  flex-direction: row-reverse;
+  border-radius: 20px;
+}
+
+.items{
+  display: flex;
+}

@@ -1,0 +1,108 @@
+
+
+.checkout-page {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  flex-wrap: wrap;
+}
+.checkout-container {
+  padding: 20px;
+  background-color: white;
+  display: flex;
+  gap:100px
+  
+}
+.cartpage-btn-checkout {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.checkout-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  padding: 0px;
+  /* margin-bottom: ; */
+  border-bottom-style: 1px groove black;
+  /* border-bottom-color: rgb(111, 109, 109); */
+}
+.checkout-items-container {
+  width: 600px;
+}
+.detail {
+  width: 600px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border-color: rgb(103, 100, 100); */
+  /* border-style: groove; */
+  border-radius: 10px;
+  gap: 20px;
+  
+
+  /* box-shadow: 10px 5px 5px ; */
+  /* border-style: 1px solid; */
+}
+.qty{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+gap: 10px;
+}
+.checkout-items-container-Main {
+  box-shadow: 2px 5px 10px rgb(62, 61, 61);
+  
+  padding: 20px;
+  border-radius: 8px;
+}
+.checkout-head-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  /* border-bottom-color:black ; */
+  /* border-style: inset ; */
+  /* border-bottom-style: groove; */
+  /* border-bottom-color: rgb(111, 109, 109); */
+}
+
+/* .cloumn-2{
+  min-height:300px ;
+} */
+
+@media screen and (max-width: 1000px) {
+  .checkout-container {
+    /* Update styles for checkout container for smaller screens */
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .checkout-page {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .checkout-page {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .detail {
+    width: 300px;
+    /* padding: 10px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

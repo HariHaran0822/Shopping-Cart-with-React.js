@@ -1,0 +1,9 @@
+.sec-2-con {
+  padding: 100px 50px;
+}
+
+.card-items {
+  display: flex;
+  gap: 150px;
+  flex-wrap: wrap;
+}
